@@ -81,10 +81,10 @@ class Comment(db.Model):
     post = relationship("BlogPost", back_populates = "comment")
 
 
-# db.create_all()
+db.create_all()
 # db.session.delete(Comment.query.get(1))
 # db.session.delete(Comment.query.get(2))
-# db.session.commit()
+db.session.commit()
 
 
 @app.route('/')
